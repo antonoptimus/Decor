@@ -19,3 +19,9 @@
   --font-cards: "Inter", sans-serif;
   --font-footer-accent: "DM Sans", sans-serif;
 }
+
+@mixin retina-bg($image) {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: $image;
+  }
+}

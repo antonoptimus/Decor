@@ -5,3 +5,13 @@ body {
   font-family: var(--font-main);
   color: var(--text-color);
 }
+
+* {
+  border: 1px solid rgb(205, 137, 137);
+}
+
+.container {
+	max-width: 1310px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
