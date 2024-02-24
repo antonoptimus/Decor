@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+
   background-color: var(--footer-bg);
   background-image: url(./../../img/header/header-bg.jpg);
   background-size: cover;
@@ -37,9 +39,36 @@
   max-width: 606px;
   font-size: 24px;
   line-height: 160%;
+  opacity: 0.9;
 }
 
 .header__search {
   margin-top: 45px;
   margin-inline: auto;
+}
+
+// dots
+
+.header__dot-sofa {
+  position: absolute;
+  left: 21%;
+  top: 64%;
+}
+
+.header__dot-vase {
+  position: absolute;
+  left: 6%;
+  top: 70.14%;
+}
+
+.header__dot-item {
+  position: absolute;
+  left: 54.8%;
+  top: 70%;
+}
+
+.header__dot-wall {
+  position: absolute;
+  right: 3.194%;
+  top: 75.738%;
 }
