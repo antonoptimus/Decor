@@ -6,12 +6,19 @@ body {
   color: var(--text-color);
 }
 
+body {
+  padding-bottom: 50vh;
+}
+
 * {
-  border: 0.860px solid rgb(205, 137, 137);
+  // border: 0.86px solid rgb(205, 137, 137);
 }
 
 .container {
-	max-width: 1310px;
-	padding: 0 15px;
-	margin: 0 auto;
+  max-width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.none {
+  display: none !important ;
 }
