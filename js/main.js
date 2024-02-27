@@ -23,3 +23,34 @@ document.addEventListener("click", () => {
 for (let hint of infoHints) {
   hint.addEventListener("click", (e) => e.stopPropagation());
 }
+
+// swiper
+
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  freeMode: true,
+
+  slidesPerView: 4,
+  spaceBetween: 42,
+
+  breakpoints: {
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    920: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1230: {
+      slidesPerView: 4,
+      spaceBetween: 42,
+    },
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: "#sliderNext",
+    prevEl: "#sliderPrev",
+  },
+});
