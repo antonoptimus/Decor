@@ -1,0 +1,23 @@
+.sub-nav {
+  display: grid;
+  gap: 20px;
+
+  padding: 20px;
+  border-radius: 16px;
+  background-color: var(--footer-bg);
+
+  font-size: 15px;
+}
+
+.sub-nav__item {
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgb(138, 138, 138);
+}
+
+.sub-nav__link {
+  transition: color 0.1s ease-in;
+
+  &:hover {
+    color: var(--accent);
+  }
+}

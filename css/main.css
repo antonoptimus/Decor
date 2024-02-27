@@ -241,6 +241,64 @@ body {
   font-size: 18px;
 }
 
+.nav-list__item {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.nav-list__link {
+  transition: opacity 0.1s ease-in;
+}
+.nav-list__link:hover {
+  opacity: 0.8;
+}
+.nav-list__link--dropdown {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-list__link--dropdown::after {
+  content: url("./../img/icons/arrow-down.svg");
+  height: 18px;
+}
+
+.nav-list__sub-nav {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  transition: all 0.2s ease-in;
+  transform: translate(0%, 10%);
+}
+
+.nav-list__item:hover .nav-list__sub-nav {
+  pointer-events: all;
+  opacity: 1;
+  transform: translate(0%, 0%);
+}
+
+.sub-nav {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: var(--footer-bg);
+  font-size: 15px;
+}
+
+.sub-nav__item {
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgb(138, 138, 138);
+}
+
+.sub-nav__link {
+  transition: color 0.1s ease-in;
+}
+.sub-nav__link:hover {
+  color: var(--accent);
+}
+
 .cart {
   justify-self: end;
   position: relative;
