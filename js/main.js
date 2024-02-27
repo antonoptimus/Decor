@@ -27,8 +27,8 @@ for (let hint of infoHints) {
 // swiper
 
 const swiper = new Swiper(".swiper", {
-  loop: true,
-  freeMode: true,
+  // loop: true,
+  // freeMode: true,
 
   slidesPerView: 4,
   spaceBetween: 42,
@@ -54,3 +54,35 @@ const swiper = new Swiper(".swiper", {
     prevEl: "#sliderPrev",
   },
 });
+
+// tabs
+
+const tabsBtns = document.querySelectorAll("[data-tab]");
+const tabsProducts = document.querySelectorAll("[data-tab-value]");
+
+for (let btn of tabsBtns) {
+  btn.addEventListener("click", function () {
+    for (let btn of tabsBtns) {
+      btn.classList.remove("tab-controls__btn--active");
+    }
+
+    this.classList.add("tab-controls__btn--active");
+
+    // отобразить нужные товары и скрыть остальные
+
+    for (let product of tabsProducts) {
+      // если дата атрибут продукта равен дата атрибуту таба...
+      if (this.dataset.tab === 'all') {
+        product.classList.remove("none");
+      } else {
+        if (this.dataset.tab === product.dataset.tabValue) {
+          product.classList.remove("none");
+        } else {
+          product.classList.add("none");
+        }
+      }
+    }
+
+    swiper.update();
+  });
+}
