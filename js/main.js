@@ -72,7 +72,7 @@ for (let btn of tabsBtns) {
 
     for (let product of tabsProducts) {
       // если дата атрибут продукта равен дата атрибуту таба...
-      if (this.dataset.tab === 'all') {
+      if (this.dataset.tab === "all") {
         product.classList.remove("none");
       } else {
         if (this.dataset.tab === product.dataset.tabValue) {
@@ -84,5 +84,16 @@ for (let btn of tabsBtns) {
     }
 
     swiper.update();
+  });
+}
+
+// mobile nav
+
+const mobileBtn = document.querySelectorAll("#mobile-btn");
+const mobileMenu = document.querySelector(".mobile-nav-wrapper");
+
+for (let btn of mobileBtn) {
+  btn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("mobile-nav-wrapper--open");
   });
 }

@@ -7,6 +7,10 @@
 
   font-weight: 500;
   font-size: 18px;
+
+  @include tablet() {
+    display: none;
+  }
 }
 
 .nav-list__item {
@@ -48,4 +52,12 @@
   pointer-events: all;
   opacity: 1;
   transform: translate(0%, 0%);
+}
+
+.nav__btn {
+  display: none;
+
+  @include tablet() {
+    display: block;
+  }
 }
