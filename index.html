@@ -71,27 +71,28 @@
             Turn your room with panto into a lot more minimalist and modern with
             ease and speed
           </p>
-
-          <form action="" class="header__search search-form">
-            <input
-              type="text"
-              class="search-form__input"
-              autocomplete="off"
-              placeholder="Search furniture"
-            />
-            <button class="search-form__btn">
-              <img src="./img/icons/search.svg" alt="search" />
-            </button>
-          </form>
+          <div class="header__search">
+            <form action="" class="search-form">
+              <input
+                type="text"
+                class="search-form__input"
+                autocomplete="off"
+                placeholder="Search furniture"
+              />
+              <button class="search-form__btn">
+                <img src="./img/icons/search.svg" alt="search" />
+              </button>
+            </form>
+          </div>
         </div>
 
-        <div class="header__dot-sofa">
+        <div class="header__dot header__dot--sofa">
           <button class="info-dot">
             <div class="info-dot__circle"></div>
             <div class="info-dot__radius"></div>
           </button>
 
-          <div class="info-hint">
+          <div class="info-hint none">
             <label>
               <input type="radio" name="sofa-color" class="info-hint__radio" />
               <div class="info-hint__fake info-hint__fake--orange"></div>
@@ -109,12 +110,12 @@
           </div>
         </div>
 
-        <div class="header__dot-vase">
+        <div class="header__dot header__dot--vase">
           <button class="info-dot">
             <div class="info-dot__circle"></div>
             <div class="info-dot__radius"></div>
           </button>
-          <div class="info-hint">
+          <div class="info-hint none">
             <label>
               <input type="radio" name="sofa-color" class="info-hint__radio" />
               <div class="info-hint__fake info-hint__fake--orange"></div>
@@ -132,12 +133,12 @@
           </div>
         </div>
 
-        <div class="header__dot-item">
+        <div class="header__dot header__dot--item">
           <button class="info-dot">
             <div class="info-dot__circle"></div>
             <div class="info-dot__radius"></div>
           </button>
-          <div class="info-hint">
+          <div class="info-hint none">
             <label>
               <input type="radio" name="sofa-color" class="info-hint__radio" />
               <div class="info-hint__fake info-hint__fake--orange"></div>
@@ -155,12 +156,12 @@
           </div>
         </div>
 
-        <div class="header__dot-wall">
+        <div class="header__dot header__dot--wall">
           <button class="info-dot">
             <div class="info-dot__circle"></div>
             <div class="info-dot__radius"></div>
           </button>
-          <div class="info-hint">
+          <div class="info-hint none">
             <label>
               <input type="radio" name="sofa-color" class="info-hint__radio" />
               <div class="info-hint__fake info-hint__fake--orange"></div>
@@ -177,55 +178,57 @@
             </label>
           </div>
         </div>
-      </div>
-
-      <div class="mobile-nav-wrapper">
-        <div class="mobile-nav-header">
-          <a href="#cart" class="mobile-cart">
-            <div href="" class="cart">
-              <img src="./img/icons/cart.svg" alt="" class="cart__img" />
-              <div class="cart__count">0</div>
-            </div>
-            Cart
-          </a>
-
-          <button id="mobile-btn" class="mobile-nav-btn-close">
-            <img src="./img/icons/close.svg" alt="close navigation" />
-          </button>
-        </div>
-
-        <ul class="mobile-nav">
-          <li class="mobile-nav__item">
-            <a href="!#" class="mobile-nav__link mobile-nav__link--dropdown"
-              >Furniture</a
-            >
-            <ul class="mobile-sub-nav">
-              <li class="mobile-sub-nav__item">
-                <a href="#!" class="mobile-sub-nav__link">Home</a>
-              </li>
-              <li class="mobile-sub-nav__item">
-                <a href="#!" class="mobile-sub-nav__link">Services</a>
-              </li>
-              <li class="mobile-sub-nav__item">
-                <a href="#!" class="mobile-sub-nav__link">Products</a>
-              </li>
-              <li class="mobile-sub-nav__item">
-                <a href="#!" class="mobile-sub-nav__link">Contacts</a>
-              </li>
-            </ul>
-          </li>
-          <li class="mobile-nav__item">
-            <a href="!#" class="mobile-nav__link">Shop</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a href="!#" class="mobile-nav__link">About Us</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a href="!#" class="mobile-nav__link">Contact</a>
-          </li>
-        </ul>
       </div>
     </header>
+
+    <!-- Mobile nav -->
+    <div class="mobile-nav-wrapper">
+      <div class="mobile-nav-header">
+        <a href="#cart" class="mobile-cart">
+          <div href="" class="cart">
+            <img src="./img/icons/cart.svg" alt="" class="cart__img" />
+            <div class="cart__count">0</div>
+          </div>
+          Cart
+        </a>
+
+        <button id="mobile-btn" class="mobile-nav-btn-close">
+          <img src="./img/icons/close.svg" alt="close navigation" />
+        </button>
+      </div>
+
+      <ul class="mobile-nav">
+        <li class="mobile-nav__item">
+          <a href="!#" class="mobile-nav__link mobile-nav__link--dropdown"
+            >Furniture</a
+          >
+          <ul class="mobile-sub-nav">
+            <li class="mobile-sub-nav__item">
+              <a href="#!" class="mobile-sub-nav__link">Home</a>
+            </li>
+            <li class="mobile-sub-nav__item">
+              <a href="#!" class="mobile-sub-nav__link">Services</a>
+            </li>
+            <li class="mobile-sub-nav__item">
+              <a href="#!" class="mobile-sub-nav__link">Products</a>
+            </li>
+            <li class="mobile-sub-nav__item">
+              <a href="#!" class="mobile-sub-nav__link">Contacts</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="!#" class="mobile-nav__link">Shop</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="!#" class="mobile-nav__link">About Us</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="!#" class="mobile-nav__link">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Mobile nav -->
 
     <section class="benefits">
       <div class="container">
