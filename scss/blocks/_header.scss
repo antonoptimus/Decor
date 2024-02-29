@@ -15,10 +15,17 @@
   a {
     color: var(--header-text-color);
   }
+
+  @include mobile() {
+    padding-top: 20px;
+    padding-bottom: 240px;
+    background-position: center;
+    aspect-ratio: unset;
+  }
 }
 
 .header__nav {
-  margin-bottom: clamp(1.25rem, 0.071rem + 5.89vw, 5.375rem);
+  margin-bottom: clamp(1.5rem, 0.071rem + 5.89vw, 5.375rem);
 }
 
 .header__content {

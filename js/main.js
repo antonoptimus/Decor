@@ -33,7 +33,7 @@ const swiper = new Swiper(".swiper", {
   // loop: true,
   // freeMode: true,
 
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 42,
 
   breakpoints: {

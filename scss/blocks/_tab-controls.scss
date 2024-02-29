@@ -3,6 +3,14 @@
   padding: 6px;
   border-radius: 44px;
   background: #eee;
+
+  @include mobile-small() {
+    display: grid;
+    padding: 10px;
+    border-radius: 32px;
+    width: 250px;
+    margin-inline: auto;
+  }
 }
 
 .tab-controls__btn {
